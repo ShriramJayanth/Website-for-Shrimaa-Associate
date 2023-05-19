@@ -4,9 +4,12 @@ function aleto(){
     em=document.getElementById("em").value;
     ph=document.getElementById("ph").value;
     q=document.getElementById("mes").value;
-    if(nam.length>0 && em.length>0 && ph.length>0 && q.length>0){
+    if(nam.length>0 && em.length>0 && ph.length>0 && q.length>0 && em.includes("@"){
         alert("YOUR QUERY IS RECIEVED")
     }
+    else if(em.includes("@")==false){
+        alert("Please enter a valid email ID);
+    }          
    
 }
 function login(){
